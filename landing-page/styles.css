@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: static;
+  background-image: url("https://i.ebayimg.com/images/g/m50AAOSw5n9dfd1p/s-l1600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 6rem);
+  grid-template-rows: 12rem;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-top: 14rem;
+  background-color: #8890ad;
+}
+
+.deck {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  font-family: "Bungee";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  color: white;
+  user-select: none;
+}
+
+.computerdeck {
+  background-image: url(https://canary.contestimg.wish.com/api/webimage/5aa0d7705708590d3f8f5681-large.jpg?cache_buster=179de36a0ea4bf15a772edb136b35d0b);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.playerdeck {
+  background-image: url(https://canary.contestimg.wish.com/api/webimage/5aa0d7705708590d3f8f5681-large.jpg?cache_buster=179de36a0ea4bf15a772edb136b35d0b);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  font-family: "Bungee";
+  font-size: xx-large;
+  color: whitesmoke;
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.card.red {
+  color: #aa4343;
+  background-color: #cdd0db;
+}
+.card.black {
+  color: #444444;
+  background-color: #cdd0db;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: attr(data-value);
+  font-size: 1rem;
+}
+
+.card::before {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.card::after {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  transform: rotate(180deg);
+}
+
+button {
+  font-size: x-large;
+  display: flex;
+  font-family: "Bungee";
+  width: 200px;
+  height: 50px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
