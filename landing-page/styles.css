@@ -7,7 +7,6 @@
 }
 
 body {
-  position: static;
   background-image: url("https://i.ebayimg.com/images/g/m50AAOSw5n9dfd1p/s-l1600.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,3 +105,29 @@ button {
   align-items: center;
   cursor: pointer;
 }
+
+.player1 {
+  grid-column: span 2;
+  font-size: x-large;
+  font-family: "Bungee";
+  width: 200px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.player2 {
+    font-size: x-large;
+    font-family: "Bungee";
+    width: 200px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
