@@ -18,12 +18,12 @@ body {
   justify-content: center;
   padding-top: 14rem;
   background-color: #8890ad;
+  z-index: auto;
 }
 
 .deck {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
   font-family: "Bungee";
   display: flex;
   justify-content: center;
@@ -34,37 +34,33 @@ body {
   user-select: none;
 }
 
-.computerdeck {
+.computerdeck, .playerdeck {
   background-image: url(https://canary.contestimg.wish.com/api/webimage/5aa0d7705708590d3f8f5681-large.jpg?cache_buster=179de36a0ea4bf15a772edb136b35d0b);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.playerdeck {
-  background-image: url(https://canary.contestimg.wish.com/api/webimage/5aa0d7705708590d3f8f5681-large.jpg?cache_buster=179de36a0ea4bf15a772edb136b35d0b);
-  background-repeat: no-repeat;
-  background-size: cover;
+  border: none;
 }
 
 .text {
   font-family: "Bungee";
-  font-size: xx-large;
+  font-size: 4em;
   color: whitesmoke;
   grid-column: span 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .card {
   position: relative;
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  border:none;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .card.red {
@@ -80,7 +76,7 @@ body {
 .card::after {
   position: absolute;
   content: attr(data-value);
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .card::before {
@@ -108,7 +104,7 @@ button {
 
 .player1 {
   grid-column: span 2;
-  font-size: x-large;
+  font-size: 1.6em;
   font-family: "Bungee";
   width: 200px;
   height: 50px;
@@ -120,7 +116,7 @@ button {
 }
 
 .player2 {
-    font-size: x-large;
+    font-size:1.6em;
     font-family: "Bungee";
     width: 200px;
     height: 50px;

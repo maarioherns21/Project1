@@ -28,6 +28,17 @@ let playerDeck;
 let computerDeck;
 let inRound;
 let stop;
+
+function userName() {
+  let username = prompt( "Enter Your Name to Play!");
+  if (username != "") {
+    document.getElementById("text1").innerHTML = username;
+  } else {
+    alert("Username cannot be blank!");
+  }
+}
+userName();
+
 // eventlistener for game to start/flip
 document.addEventListener("click", () => {
   if (stop) {

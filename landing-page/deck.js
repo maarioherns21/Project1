@@ -1,5 +1,5 @@
 ///logic for war
-const cardSuits = ["🏈", "🎱", "🏀", "⚽️"]; // variable suits for cards
+const cardSuits = ["🧨", "🏴‍☠️", "🛡️", "💣"]; // variable suits for cards
 // variables for value of cards // this create 52 cards
 const cardValues = [
   "A",
@@ -25,7 +25,7 @@ class Card {
   }
 
   get cardColor() {
-    return this.suit === "🎱" || this.suit === "⚽️" ? "black" : "red";
+    return this.suit === "🏴‍☠️" || this.suit === "💣" ? "black" : "red";
   }
 
   getHTML() {
