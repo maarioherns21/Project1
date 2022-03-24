@@ -17,7 +17,6 @@ body {
   gap: 0.5rem;
   justify-content: center;
   padding-top: 14rem;
-  background-color: #8890ad;
   z-index: auto;
 }
 
@@ -39,6 +38,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
+  text-shadow: #E1E063 1px 0 10px;
+  box-shadow:#E1FFFF 1px 0 10px;
 }
 
 .text {
@@ -49,27 +50,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: #E1E063 1px 0 10px;
 }
 
 .card {
+  background: url(https://i.etsystatic.com/5295659/r/il/c200e4/1840157274/il_794xN.1840157274_4m0e.jpg);
   position: relative;
   height: 100%;
   width: 100%;
-  border:none;
+  border: none;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 5.6rem;
+  text-shadow:#E1FFFF 1px 0 10px;
+  box-shadow:#E1FFFF 1px 0 10px;
 }
 
 .card.red {
   color: #aa4343;
-  background-color: #cdd0db;
 }
 .card.black {
   color: #444444;
-  background-color: #cdd0db;
 }
 
 .card::before,
@@ -90,18 +93,6 @@ body {
   transform: rotate(180deg);
 }
 
-button {
-  font-size: x-large;
-  display: flex;
-  font-family: "Bungee";
-  width: 200px;
-  height: 50px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
 .player1 {
   grid-column: span 2;
   font-size: 1.6em;
@@ -113,6 +104,7 @@ button {
   align-content: center;
   justify-content: center;
   align-items: center;
+  text-shadow: #E1FFFF 1px 0 10px;
 }
 
 .player2 {
@@ -125,5 +117,30 @@ button {
     align-content: center;
     justify-content: center;
     align-items: center;
-    
+    text-shadow: #E1FFFF 1px 0 10px;
   }
+  button {
+    color: white;
+    background-color:#ab1a1a;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    font-family: "Bungee";
+    text-align: center;
+    border: none;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 0 transparent;
+  }
+    button:hover {
+      color: white;
+      box-shadow: 0 0 30px 0;
+      background-color:#E46D5D;
+    }
+    button:active {
+      box-shadow: 0 0 0 0 transparent;
+    }
+  
+    

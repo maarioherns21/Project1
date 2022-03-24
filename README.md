@@ -7,7 +7,7 @@ Each player turns up a card at the same time and the player with the higher card
 If the cards are the same rank, it is War. Each player turns up one card face down and one card face up. The player with the higher cards takes both piles (six cards). If the turned-up cards are again the same rank, each player places another card face down and turns another card face up. The player with the higher card takes all 10 cards, and so on.
 
 screenshots
-
+inside the screenfolder.
 
 ☐ Technologies Used: List of the technologies used, e.g., JavaScript, HTML, CSS...
 WAR GAME
@@ -28,7 +28,7 @@ Flex:  flex was used for elements responsiveness within a container to automatic
 Grid: was used for dividing the different elements on the page. For example in size, position, and layer, between parts of a control, built HTML.
 
 JavaScript 
-variables = in this game we used variables to create logic within the game as well as functional. for example, we used the variable SUIT as a global static variable with the different types of suits for the cards or the variable "VALUES" to created the value of each one of the 52 cards within the deck.
+variables = in this game we used variables to create logic within the game as well as functional. for example, we used the variable "suit" as a global static variable with the different types of suits for the cards or the variable "values" to created the value of each one of the 52 cards within the deck.
 
 Classes = We also created classes, to used as a template to create functions, for example, the "Card" class created the logic for the suits and value of each card. We also added another class name "deck which encapsulates the deck of cards and creates random outcomes. the game war to work properly. within this classes, we created a function name shuffle that loops through all the cards and swaps with another card (perfect shuffle) inside of this we created a For loop that will shuffle the cards around, inside of this for loop we created a variable newIndex that takes the player earlier in the deck of cards that we currently are.
 
@@ -50,6 +50,8 @@ How to start the game, fill up your name and press play instruction will pop up,
 
 
 ☐ Next Steps: Planned future enhancements (icebox items).
+
+there will be in the futuere levels as well as multipleyer options and online options 
 
 Note: Don't underestimate the value of a well crafted README.md. The README.md introduces your project to prospective employers and forms their first impression of your work!
 

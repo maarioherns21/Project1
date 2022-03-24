@@ -18,3 +18,9 @@ btn.addEventListener("click", function () {
     alert(infoMessage);
   }
 });
+
+
+function playSound () {
+  document.getElementById('play').play();
+};
+
