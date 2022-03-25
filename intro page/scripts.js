@@ -1,5 +1,3 @@
-const btn = document.querySelector("button");
-const firstText = [];
 const infoMessage = `THE GOAL
 To be the first player to win all 52 cards
 
@@ -14,18 +12,11 @@ HOW TO KEEP SCORE
 The game ends when one player has won all the cards.
 `;
 
-btn.addEventListener("click", function () {
-  const player1 = document.getElementById("firsttext");
+document.getElementById("myBtn").addEventListener("click", myFunction);
 
-  if (player1.value != "") {
-    firstText.push(player1.value);
-    alert(infoMessage);
-    return firstText;
-  } else {
-    alert(infoMessage);
-  }
-});
-
+function myFunction() {
+  alert (infoMessage);
+}
 
 function playSound () {
   document.getElementById('play').play();
