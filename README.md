@@ -15,13 +15,13 @@ HOW TO KEEP SCORE
 The game ends when one player has won all the cards.
 
 Wireframe 
-[This is an image](./screenshots/Screen%20Shot%202022-03-24%20at%205.46.27%20PM.png)
-[This is an image](./screenshots/Screen%20Shot%202022-03-24%20at%205.48.07%20PM.png)
+![This is an image](screenshots/Screen%20Shot%202022-03-24%20at%205.46.27%20PM.png)
+![This is an image](screenshots/Screen%20Shot%202022-03-24%20at%205.48.07%20PM.png)
 
 GAME PLAY screenshots
 ![This is an image](screenshots/intro%20page%20how%20to%20play%20.png)
 ![This is an image](screenshots/intro%20page.png)
-![This is an image](./screenshots/playing%20page.png)
+![This is an image](screenshots/playing%20page.png)
 
 
 ☐ Technologies Used:
