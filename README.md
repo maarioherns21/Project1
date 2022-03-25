@@ -2,6 +2,10 @@
 
 INTRODUCTION
 
+THE NAME 
+
+WAR GAME
+
 THE GOAL 
 
 To be the first player to win all 52 cards
