@@ -1,5 +1,5 @@
 import Deck from "./deck.js"; 
-//key values of cards 
+// this is an Object with the keys and values of cards 
 const CardValueMap = {
   2: 2,
   3: 3,
@@ -16,19 +16,19 @@ const CardValueMap = {
   A: 14,
 };
 
-/// querys html --> JS to make them funtional in JS
+/// querys selectors  html --> JS to make them funtional in JS
 const computerCardSlot = document.querySelector(".computercardslot");
 const playerCardSlot = document.querySelector(".playercardslot");
 const computerDeckEl = document.querySelector(".computerdeck");
 const playerDeckEl = document.querySelector(".playerdeck");
 const text = document.querySelector(".text");
 
-
+/// variables created 
 let playerDeck;
 let computerDeck;
 let inRound;
 let stop;
-// this funtion promps  the username to be added to the game
+// this funtion prompts the username to be added to the game
 function userName() {
   let username = prompt( "Enter Your Name to Play!");
   if (username != "") {
@@ -39,7 +39,7 @@ function userName() {
 }
 userName();
 
-// eventlistener for game to start/flip
+// eventlistener for game to start/flip/clenas the round
 document.addEventListener("click", () => {
   if (stop) {
     startGame();
@@ -59,8 +59,11 @@ function startGame() {
   deck.shuffle();
 
   const deckMidPoint = Math.ceil(deck.numberOfCards / 2);
-  playerDeck = new Deck(deck.cards.slice(0, deckMidPoint));
-  computerDeck = new Deck(deck.cards.slice(deckMidPoint, deck.numberOfCards));
+  //creates the  52 division equality  between  the player deck and computer deck 
+  playerDeck = new Deck(deck.cards.slice(0, deckMidPoint)); 
+  // devided the cars fro the player it slice in hald 26 cards 
+  computerDeck = new Deck(deck.cards.slice(deckMidPoint, deck.numberOfCards)); 
+  // alice 26 cards within the deck 
   inRound = false;
   stop = false;
 

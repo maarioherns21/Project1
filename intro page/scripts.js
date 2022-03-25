@@ -11,13 +11,13 @@ If the turned-up cards are again the same rank, each player places another card 
 HOW TO KEEP SCORE
 The game ends when one player has won all the cards.
 `;
+/// grabs the Id "myBtn" from the element in the division "DIV" and creaes a click funtion 
+document.getElementById("myBtn").addEventListener("click", infoRules);
 
-document.getElementById("myBtn").addEventListener("click", myFunction);
-
-function myFunction() {
+function infoRules() {
   alert (infoMessage);
 }
-
+/// this function plays the sound within the button 
 function playSound () {
   document.getElementById('play').play();
 };
