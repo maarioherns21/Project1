@@ -2,9 +2,7 @@
 
 INTRODUCTION
 
-THE NAME 
-
-WAR GAME
+**War Game**
 
 THE GOAL 
 
