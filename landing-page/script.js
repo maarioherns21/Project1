@@ -28,7 +28,7 @@ let playerDeck;
 let computerDeck;
 let inRound;
 let stop;
-
+// this funtion promps  the username to be added to the game
 function userName() {
   let username = prompt( "Enter Your Name to Play!");
   if (username != "") {
@@ -52,7 +52,7 @@ document.addEventListener("click", () => {
     flipCards();
   }
 });
-// the strt fuction /new deck /susffle 
+// the strt fuction /new deck /susffle / division between  the stack 
 startGame();
 function startGame() {
   const deck = new Deck();
@@ -77,7 +77,7 @@ function cleanBeforeRound() {
 /// outcomes fuction 
 function flipCards() {
   inRound = true;
-
+/// this  pops the playerCArd and computer card into the system 
   const playerCard = playerDeck.pop();
   const computerCard = computerDeck.pop();
 
@@ -85,7 +85,7 @@ function flipCards() {
   computerCardSlot.appendChild(computerCard.getHTML());
 
   updateDeckCount();
-
+////this roundwinner function  creates  the statements for winner and loser
   if (isRoundWinner(playerCard, computerCard)) {
     text.innerText = "win";
     playerDeck.push(playerCard);
