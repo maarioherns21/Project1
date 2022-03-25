@@ -32,11 +32,11 @@ in this project (WAR GAME), I used the following component of HTML, CSS, JS:
 
 HTML
 
-<script> = this tag used in order to link JS to HTML.
-<link> = this tag was used to link the stylesheet CSS.
-<div>=this tag was used in order to add the different classes needed for the game.
-<div class=""> classes were also used to group different elements withing the HTML file.
-<div id="" > ID was used in order to make a single element reachable .
+SCRIPT = this tag used in order to link JS to HTML.
+LINK = this tag was used to link the stylesheet CSS.
+DIV =this tag was used in order to add the different classes needed for the game.
+DIV class= classes were also used to group different elements withing the HTML file.
+ID = ID was used in order to make a single element reachable .
 
   
 CSS
