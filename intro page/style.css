@@ -7,7 +7,7 @@
 body {
   background-image: url("https://i.ebayimg.com/images/g/m50AAOSw5n9dfd1p/s-l1600.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   padding-top: 6rem;
   display: grid;
   grid-template-rows: 9fr 1fr 1fr;
@@ -32,7 +32,7 @@ div > .image {
 
 button {
   color: white;
-  background: #8d1d1f;;
+  background: #8d1d1f;
   width: 310px;
   height: 50px;
   font-size: 45px;
@@ -44,11 +44,11 @@ button {
   align-items: center;
   box-shadow: 0 0 0 0 transparent;
 }
-  button:hover {
-    color: #ffffff;
-    box-shadow: 0 0 30px 0;
-    background-color:#E46D5D;
-  }
-  button:active {
-    box-shadow: 0 0 0 0 transparent;
-  }
+button:hover {
+  color: #ffffff;
+  box-shadow: 0 0 30px 0;
+  background-color: #e46d5d;
+}
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+}

@@ -1,5 +1,5 @@
-import Deck from "./deck.js"; 
-// this is an Object with the keys and values of cards 
+import Deck from "./deck.js";
+// this is an Object with the keys and values of cards
 const CardValueMap = {
   2: 2,
   3: 3,
@@ -23,14 +23,14 @@ const computerDeckEl = document.querySelector(".computerdeck");
 const playerDeckEl = document.querySelector(".playerdeck");
 const text = document.querySelector(".text");
 
-/// variables created 
+/// variables created
 let playerDeck;
 let computerDeck;
 let inRound;
 let stop;
 // this funtion prompts the username to be added to the game
 function userName() {
-  let username = prompt( "Enter Your Name to Play!");
+  let username = prompt("Enter Your Name to Play!");
   if (username != "") {
     document.getElementById("text1").innerHTML = username;
   } else {
@@ -52,18 +52,18 @@ document.addEventListener("click", () => {
     flipCards();
   }
 });
-// the strt fuction /new deck /susffle / division between  the stack 
+// the strt fuction /new deck /susffle / division between  the stack
 startGame();
 function startGame() {
   const deck = new Deck();
   deck.shuffle();
 
   const deckMidPoint = Math.ceil(deck.numberOfCards / 2);
-  //creates the  52 division equality  between  the player deck and computer deck 
-  playerDeck = new Deck(deck.cards.slice(0, deckMidPoint)); 
-  // devided the cars fro the player it slice in hald 26 cards 
-  computerDeck = new Deck(deck.cards.slice(deckMidPoint, deck.numberOfCards)); 
-  // alice 26 cards within the deck 
+  //creates the  52 division equality  between  the player deck and computer deck
+  playerDeck = new Deck(deck.cards.slice(0, deckMidPoint));
+  // devided the cars fro the player it slice in hald 26 cards
+  computerDeck = new Deck(deck.cards.slice(deckMidPoint, deck.numberOfCards));
+  // alice 26 cards within the deck
   inRound = false;
   stop = false;
 
@@ -77,10 +77,10 @@ function cleanBeforeRound() {
 
   updateDeckCount();
 }
-/// outcomes fuction 
+/// outcomes fuction
 function flipCards() {
   inRound = true;
-/// this  pops the playerCArd and computer card into the system 
+  /// this  pops the playerCArd and computer card into the system
   const playerCard = playerDeck.pop();
   const computerCard = computerDeck.pop();
 
@@ -88,7 +88,7 @@ function flipCards() {
   computerCardSlot.appendChild(computerCard.getHTML());
 
   updateDeckCount();
-////this roundwinner function  creates  the statements for winner and loser
+  ////this roundwinner function  creates  the statements for winner and loser
   if (isRoundWinner(playerCard, computerCard)) {
     text.innerText = "win";
     playerDeck.push(playerCard);
@@ -124,5 +124,3 @@ function isRoundWinner(cardOne, cardTwo) {
 function isGameOver(deck) {
   return deck.numberOfCards === 0;
 }
-
-

@@ -33,13 +33,14 @@ body {
   user-select: none;
 }
 
-.computerdeck, .playerdeck {
+.computerdeck,
+.playerdeck {
   background-image: url(https://canary.contestimg.wish.com/api/webimage/5aa0d7705708590d3f8f5681-large.jpg?cache_buster=179de36a0ea4bf15a772edb136b35d0b);
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
-  text-shadow: #E1E063 1px 0 10px;
-  box-shadow:#E1FFFF 1px 0 10px;
+  text-shadow: #e1e063 1px 0 10px;
+  box-shadow: #e1ffff 1px 0 10px;
 }
 
 .text {
@@ -50,7 +51,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-shadow: #E1E063 1px 0 10px;
+  text-shadow: #e1e063 1px 0 10px;
 }
 
 .card {
@@ -64,8 +65,8 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 5.6rem;
-  text-shadow:#E1FFFF 1px 0 10px;
-  box-shadow:#E1FFFF 1px 0 10px;
+  text-shadow: #e1ffff 1px 0 10px;
+  box-shadow: #e1ffff 1px 0 10px;
 }
 
 .card.red {
@@ -104,43 +105,41 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
-  text-shadow: #E1FFFF 1px 0 10px;
+  text-shadow: #e1ffff 1px 0 10px;
 }
 
 .player2 {
-    font-size:1.6em;
-    font-family: "Bungee";
-    width: 200px;
-    height: 50px;
-    color: white;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-shadow: #E1FFFF 1px 0 10px;
-  }
-  button {
-    color: white;
-    background-color:#ab1a1a;
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    display: flex;
-    font-family: "Bungee";
-    text-align: center;
-    border: none;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 0 0 transparent;
-  }
-    button:hover {
-      color: white;
-      box-shadow: 0 0 30px 0;
-      background-color:#E46D5D;
-    }
-    button:active {
-      box-shadow: 0 0 0 0 transparent;
-    }
-  
-    
+  font-size: 1.6em;
+  font-family: "Bungee";
+  width: 200px;
+  height: 50px;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #e1ffff 1px 0 10px;
+}
+button {
+  color: white;
+  background-color: #ab1a1a;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  font-family: "Bungee";
+  text-align: center;
+  border: none;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 0 transparent;
+}
+button:hover {
+  color: white;
+  box-shadow: 0 0 30px 0;
+  background-color: #e46d5d;
+}
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+}
